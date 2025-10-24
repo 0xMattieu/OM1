@@ -159,3 +159,16 @@ Please make sure to read the [Contributing Guide](./CONTRIBUTING.md) before maki
 ## License
 
 This project is licensed under the terms of the MIT License, which is a permissive free software license that allows users to freely use, modify, and distribute the software. The MIT License is a widely used and well-established license that is known for its simplicity and flexibility. By using the MIT License, this project aims to encourage collaboration, modification, and distribution of the software.
+
+### Developer Note
+To ensure proper Voice-to-Speech execution, make sure `pyaudio` is installed:
+```bash
+pip install pyaudio
+### Quick Start Example
+from openmind import OM1
+
+# Initialize the model
+model = OM1()
+
+# Test summarization
+print(model.summarize("Hello OpenMind!"))
